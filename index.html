@@ -1,65 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-<script src="script.js"></script>
-</head>
-<body>
-    
+    <!-- CSS Libraries go here... -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <!-- Custom CSS Libraries go here... -->
+  </head>
+  <body>
+    <table class="table table-dark">
+      <thead id="tHead">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody id="tBody">
+        <tr>
+          <th scope="row">1</th>
+          <td>Chrystal</td>
+          <td>LoVato</td>
+          <td>clovato@asu.edu</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>jacobthornton@gmail.com</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>Thomas</td>
+          <td>larry.thomas@hotmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form>
+      <div>
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" />
+      </div>
+      <div>
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" />
+      </div>
+      <div>
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" />
+      </div>
+
+      <button type="submit" id="formsubmit">Submit</button>
+    </form>
+
+    <!-- JavaScript Libraries go here.. -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
-
-    <table class="table table-dark">
-        <thead id="tHead">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Email</th>
-          </tr>
-        </thead>
-        <tbody id="tBody">
-          <tr>
-            <th scope="row" >1</th>
-            <td>Chrystal</td>
-            <td>LoVato</td>
-            <td>clovato@asu.edu</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>jacobthornton@gmail.com</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>Thomas</td>
-            <td>larry.thomas@hotmail.com</td>
-          </tr>
-        </tbody>
-      </table>
-
-        <form>
-            <div>
-                <label for = "firstName"  class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName"/>
-</div>
-<div>
-    <label for = "lastName"class="form-label">Last Name</label>
-    <input type="text" class="form-control" id="lastName"/>
-</div>
-<div>
-    <label for = "email"class="form-label">Email</label>
-    <input type="text" class="form-control" id="email"/>
-</div>
-
-    <button type="submit" id="formsubmit">Submit</button>
-</form>
-
-</body>
+    <!-- Custom JavaScript libraries go here.. -->
+    <script src="script.js"></script>
+  </body>
 </html>
